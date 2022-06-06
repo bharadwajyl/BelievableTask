@@ -1,0 +1,46 @@
+main{
+text-align:center;
+}
+
+hr{
+width:50%;
+margin:auto;
+color:rgba(1,1,1,0.3);
+}
+
+table{
+margin:1rem 0;
+}
+
+.cards a{
+flex:0 0 16.6%;
+}
+
+footer section{
+display:flex;
+align-items:center;
+}
+
+footer section:nth-child(1){
+display:none;
+}
+
+footer a{
+width:100%;
+text-decoration:underline;
+}
+
+footer a:nth-child(2){
+text-align:center;
+}
+
+footer a:nth-child(3){
+text-align:right;
+}
+
+
+
+/*ASHIF PAGE*/
+.error{
+width:40%;
+}

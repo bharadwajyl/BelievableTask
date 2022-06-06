@@ -1,0 +1,320 @@
+*,html{
+scroll-behavior: smooth;
+}
+
+*, *:after, *:before {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+:root{
+scrollbar-color: rgb(210,210,210) rgb(46,54,69) !important;
+scrollbar-width: thin !important;
+--white:#fff;
+--black:#000;
+--dark:#2a2a2e;
+--skyblue:#99ccff;
+--green:#3fd5ba;
+--gray:#e8e8e8;
+--defaultfont:'Poppins', sans-serif;
+--titlefont:'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+height: 12px;
+width: 6px;
+background: var(--dark);
+}
+
+::-webkit-scrollbar-thumb {
+background: var(--dark);
+-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+background: var(--dark);
+}
+
+
+/********************************
+          DEFAULT
+*********************************/
+body{
+margin:0;
+overflow-x:hidden !important;
+font-family:var(--defaultfont);
+}
+
+a{
+text-decoration:none;
+}
+
+
+
+
+/*HEADER*/
+header{
+width:100%;
+background-color:var(--skyblue);
+padding:0.3rem;
+}
+
+
+
+/*MAIN*/
+main{
+padding:1rem;
+}
+
+.date{
+text-align:center;
+line-height:1;
+}
+
+.date p{
+font-weight:600;
+}
+
+.buttons button{
+width:50%;
+background-color:var(--gray);
+text-align:center;
+margin:0.6rem auto;
+padding:0.5rem 0;
+}
+
+form{
+width:50%;
+display:inline-block;
+padding-bottom:1rem;
+}
+
+form button{
+background-color:var(--green);
+padding:0.5rem;
+margin-left:10px;
+}
+
+.form{
+width:100%;
+}
+
+.form textarea{
+background-color:#f2f2f2;
+height:100px;
+resize:none;
+width:100%;
+border:1px solid rgba(1,1,1,0.2);
+}
+
+.form input{
+background-color:#f2f2f2;
+padding:0.5rem;
+width:100%;
+border:1px solid rgba(1,1,1,0.2);
+}
+
+.form button{
+background-color:#6995a9;
+padding:0.5rem;
+text-align:center;
+color:var(--white);
+border:0;
+display:block;
+width:100%;
+margin:3vh auto;
+}
+
+.form button:hover{
+background-color:var(--dark);
+}
+
+.form button .fa{
+float:left;
+}
+
+.colored button:nth-child(even){
+background-color:var(--green);
+}
+
+.content{
+text-align:left;
+}
+
+.content_2{
+width:80% !important;
+margin:auto;
+}
+
+@media (max-width:820px){
+.content_2{
+width:100% !important;
+margin:auto;
+}
+}
+
+.contact b, .content strong{
+font-weight:400;
+}
+
+.links a{
+display:block;
+width:100%;
+margin:10px 0;
+padding:1.3rem 0;
+text-align:center;
+background-color:var(--gray);
+color:var(--black);
+position:relative;
+}
+
+.links a .fa{
+color:var(--gray);
+font-size:3em;
+position:absolute;
+right:0;
+top:50%;
+transform:translate(-20%, -50%);
+}
+
+.links a:nth-child(1){
+background-color:#a08b92;
+}
+.links a:nth-child(2){
+background-color:#9acd32;
+}
+.links a:nth-child(3){
+background-color:#ffa500;
+}
+.links a:nth-child(4){
+background-color:#4682b4;
+}
+.links a:nth-child(5){
+background-color:#bc8f8f;
+}
+.links a:nth-child(6){
+background-color:#59ac83;
+}
+.links a:nth-child(7){
+background-color:#ff1493;
+}
+.links a:nth-child(8){
+background-color:#00ced1;
+}
+.links a:nth-child(8){
+background-color:#db7093;
+}
+
+
+
+
+/*TABLE*/
+table{
+width:100%;
+border-collapse:collapse;
+text-align:center;
+border-spacing: 0;
+}
+
+
+table th{
+font-weight:400;
+border:1px solid #000;
+}
+
+table td{
+border:1px solid var(--black);
+}
+
+table tr:nth-child(1){
+width:100%;
+background-color:var(--gray);
+text-align:center;
+text-transform:uppercase;
+}
+
+table tr:nth-child(2){
+background-color:var(--green);
+}
+
+.table{
+width:60%;
+margin:auto;
+}
+
+@media (max-width:820px){
+.table{
+width:100%;
+}
+}
+
+.table tr:nth-child(1),.table tr:nth-child(2){
+background-color:transparent ;
+}
+
+.table td, .table th{
+border:0;
+border-bottom:1px solid rgba(1,1,1,0.1);
+padding:0.8rem 0;
+text-align:left;
+}
+
+.table tr:hover{
+background-color:#f9f9f9;
+}
+
+
+
+/*CARDS*/
+.cards{
+width:100%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+flex-wrap:wrap;
+padding:1rem 0;
+}
+
+.cards a{
+flex:0 0 33%;
+}
+
+.cards a img{
+width:100%;
+height:100%;
+}
+
+
+
+/*FOOTER*/
+footer{
+width:100%;
+}
+
+footer section{
+width:100%;
+}
+
+footer section:nth-child(1){
+padding:0.6rem 0;
+background-color:var(--gray);
+}
+
+footer section:nth-child(2){
+background-color:var(--skyblue);
+}
+
+footer section:nth-child(2) a:nth-child(2){
+float:right;
+}
+
+@media (max-width:640px){
+footer section a{
+font-size:10px;
+}
+}
+
+.disclaimer{
+display:none;   
+}
